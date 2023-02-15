@@ -2,25 +2,33 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <a href="index.html">Back</a>
-		<form action="https://google.com/search "method="get">
-
-            <label for="as_q">all the words:</label>
-            <input type="text" name="as_q">
-
-            <label for="as_epq">this exact word or phrase:</label>
-            <input type="text" name="as_epq">
-
-            <label for="as_oq">any of these words:</label>
-            <input type="text" name="as_oq">
-
-            <label for="as_eq">none of these words:</label>
-            <input type="text" name="as_eq">
-
-            <input type="hidden" id="tbm" value="isch">
-			<input type="submit" value="Advanced Search">
+        <header>
+            <a href="index.html">Back</a>
+        </header>
+        <label id= "adv_srch_lbl" style="margin-left:10px" >Advanced Search</label>
+		<form class="adv_srch" action="https://google.com/search "method="get">
+            <ul>
+                <li>
+                <label for="as_q">all the words:</label>
+                <input type="text" name="as_q">
+                </li>
+                <li>
+                <label for="as_epq">this exact word or phrase:</label>
+                <input type="text" name="as_epq">
+                </li>
+                <li>
+                <label for="as_oq">any of these words:</label>
+                <input type="text" name="as_oq">
+                </li>
+                <li>
+                <label for="as_eq">none of these words:</label>
+                <input type="text" name="as_eq">
+                </li>
+			<input class="adv_srch_btn" type="submit" value="Advanced Search">
+            </ul>
         </form>		
     </body>
 </html>
